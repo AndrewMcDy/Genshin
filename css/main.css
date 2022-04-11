@@ -88,10 +88,38 @@ h6 {
   font-weight: 400;
 }
 
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
+body {
   background-color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  overflow: hidden;
+}
+
+.header {
+  height: 100px;
+  background-color: #555;
+}
+
+.header__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__text {
+  font-size: 32px;
+  color: #ddd;
 }
 
 .rolling-menu__elements {
@@ -103,12 +131,6 @@ h6 {
   position: relative;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.rolling-menu__element-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
 }
 
 .rolling-menu__element {
